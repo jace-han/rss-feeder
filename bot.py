@@ -9,7 +9,7 @@ from datetime import datetime
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 RSS_FEED_URL = os.getenv("RSS_FEED_URLS", "").split(",")
-RSS_FEED_URL = [url.strip() for url in RSS_FEED_URLS if url.strip()]
+RSS_FEED_URL = [url.strip() for url in RSS_FEED_URL if url.strip()]
 
 # storage file in repo to track seen entries
 SEEN_FILE = "seen.json"
