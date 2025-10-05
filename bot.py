@@ -8,7 +8,7 @@ from datetime import datetime
 # config: read from env (set these as GitHub secrets)
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-RSS_FEED_URL = os.getenv("RSS_FEED_URLS", "").split(",")
+RSS_FEED_URL = os.getenv("RSS_FEED_URL", "").split(",")
 RSS_FEED_URL = [url.strip() for url in RSS_FEED_URL if url.strip()]
 
 # storage file in repo to track seen entries
