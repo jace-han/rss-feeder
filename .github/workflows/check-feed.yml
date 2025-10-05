@@ -1,9 +1,13 @@
+
 name: Check RSS and notify Telegram
 
 on:
   schedule:
     - cron: '0 0 * * *' # daily at 8am SGT
   workflow_dispatch: {}
+  
+permissions:
+  contents: write
 
 jobs:
   notify:
